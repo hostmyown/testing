@@ -13,14 +13,14 @@ ModuleName_err_t ModuleName_create(ModuleName_config_t *config, ModuleName_handl
 
      if (self == NULL)
      {
-        return ModuleName_OUT_OF_MEMORY;
+        return ModuleNameUpper_OUT_OF_MEMORY;
      }
 
      self->config = *config;
 
      *handle = self;
 
-     return ModuleName_OK;
+     return ModuleNameUpper_OK;
 }
 
 void ModuleName_destroy(ModuleName_handle_t handle)
